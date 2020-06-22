@@ -1,0 +1,5 @@
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\test\bin\Debug\test.exe.config
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\test\bin\Debug\test.exe
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\test\bin\Debug\test.pdb
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\test\obj\Debug\test.exe
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\test\obj\Debug\test.pdb

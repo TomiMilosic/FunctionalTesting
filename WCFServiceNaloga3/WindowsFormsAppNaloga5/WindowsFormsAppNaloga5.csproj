@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{101472C7-D50C-4D5F-B9E6-3E4A82A930F0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsAppNaloga5</RootNamespace>
+    <AssemblyName>WindowsFormsAppNaloga5</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\FirstWebService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="DodajAvto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajAvto.Designer.cs">
+      <DependentUpon>DodajAvto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DodajAvtosalon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajAvtosalon.Designer.cs">
+      <DependentUpon>DodajAvtosalon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NavadniUporabnik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NavadniUporabnik.Designer.cs">
+      <DependentUpon>NavadniUporabnik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistracijaOkno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistracijaOkno.Designer.cs">
+      <DependentUpon>RegistracijaOkno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UrediAvto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrediAvto.Designer.cs">
+      <DependentUpon>UrediAvto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UrediAvtosalon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrediAvtosalon.Designer.cs">
+      <DependentUpon>UrediAvtosalon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vmestna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vmestna.Designer.cs">
+      <DependentUpon>Vmestna.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodajAvto.resx">
+      <DependentUpon>DodajAvto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodajAvtosalon.resx">
+      <DependentUpon>DodajAvtosalon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavadniUporabnik.resx">
+      <DependentUpon>NavadniUporabnik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RegistracijaOkno.resx">
+      <DependentUpon>RegistracijaOkno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrediAvto.resx">
+      <DependentUpon>UrediAvto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrediAvtosalon.resx">
+      <DependentUpon>UrediAvtosalon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vmestna.resx">
+      <DependentUpon>Vmestna.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Connected Services\FirstWebService\Service.wsdl" />
+    <None Include="Connected Services\FirstWebService\Service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\FirstWebService\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\FirstWebService\Service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\FirstWebService\WindowsFormsAppNaloga5.FirstWebService.Avto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\FirstWebService\WindowsFormsAppNaloga5.FirstWebService.Avtosalon.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\FirstWebService\WindowsFormsAppNaloga5.FirstWebService.AvtoVAvtosalonu.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\FirstWebService\WindowsFormsAppNaloga5.FirstWebService.UporabniskiRacun.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\FirstWebService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\FirstWebService\Service.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\FirstWebService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\FirstWebService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\FirstWebService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

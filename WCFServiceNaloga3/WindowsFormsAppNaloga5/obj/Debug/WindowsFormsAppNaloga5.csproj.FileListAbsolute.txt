@@ -1,0 +1,17 @@
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\WindowsFormsAppNaloga5\bin\Debug\WindowsFormsAppNaloga5.exe.config
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\WindowsFormsAppNaloga5\bin\Debug\WindowsFormsAppNaloga5.exe
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\WindowsFormsAppNaloga5\bin\Debug\WindowsFormsAppNaloga5.pdb
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\WindowsFormsAppNaloga5\obj\Debug\WindowsFormsAppNaloga5.Properties.Resources.resources
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\WindowsFormsAppNaloga5\obj\Debug\WindowsFormsAppNaloga5.csproj.GenerateResource.cache
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\WindowsFormsAppNaloga5\obj\Debug\WindowsFormsAppNaloga5.exe
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\WindowsFormsAppNaloga5\obj\Debug\WindowsFormsAppNaloga5.pdb
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\WindowsFormsAppNaloga5\obj\Debug\WindowsFormsAppNaloga5.Form1.resources
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\WindowsFormsAppNaloga5\obj\Debug\WindowsFormsAppNaloga5.RegistracijaOkno.resources
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\WindowsFormsAppNaloga5\obj\Debug\WindowsFormsAppNaloga5.Admin.resources
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\WindowsFormsAppNaloga5\obj\Debug\WindowsFormsAppNaloga5.DodajAvto.resources
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\WindowsFormsAppNaloga5\obj\Debug\WindowsFormsAppNaloga5.DodajAvtosalon.resources
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\WindowsFormsAppNaloga5\obj\Debug\WindowsFormsAppNaloga5.UrediAvto.resources
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\WindowsFormsAppNaloga5\obj\Debug\WindowsFormsAppNaloga5.UrediAvtosalon.resources
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\WindowsFormsAppNaloga5\obj\Debug\WindowsFormsAppNaloga5.Vmestna.resources
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\WindowsFormsAppNaloga5\obj\Debug\WindowsFormsAppNaloga5.csprojAssemblyReference.cache
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\WindowsFormsAppNaloga5\obj\Debug\WindowsFormsAppNaloga5.NavadniUporabnik.resources

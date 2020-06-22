@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:49837/Service.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
+  <xs:element name="IzpisAdmin">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IzpisAdminResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="IzpisAdminResult" nillable="true" type="q1:ArrayOfAvtoVAvtosalonu" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="najstarejsiAvtosalon">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="najstarejsiAvtosalonResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="najstarejsiAvtosalonResult" nillable="true" type="q2:Avtosalon" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="najvecAvtomobilov">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="najvecAvtomobilovResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="najvecAvtomobilovResult" nillable="true" type="q3:Avtosalon" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PovprecnavrednostAvtov">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PovprecnavrednostAvtovResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PovprecnavrednostAvtovResult" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Uporabnik">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Ime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="geslo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UporabnikResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UporabnikResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VrniAvte">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VrniAvteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="VrniAvteResult" nillable="true" type="q4:ArrayOfAvto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VrniAvtoSalone">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VrniAvtoSaloneResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="VrniAvtoSaloneResult" nillable="true" type="q5:ArrayOfAvtosalon" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VrniAvteVSalonu">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VrniAvteVSalonuResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="VrniAvteVSalonuResult" nillable="true" type="q6:ArrayOfAvtoVAvtosalonu" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DodajAvto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="znamka" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="model" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="cena" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DodajAvtoResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DodajAvtoSalon">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="naziv" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="kraj" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LetoUstanovitve" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DodajAvtoSalonResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DodajAvtoVSalon">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idAvtosalona" type="xs:int" />
+        <xs:element minOccurs="0" name="idavta" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DodajAvtoVSalonResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="poosodobiAvto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="a" type="xs:int" />
+        <xs:element minOccurs="0" name="znamka" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="model" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="cena" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="poosodobiAvtoResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="poosodobiAvtoSalon">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="a" type="xs:int" />
+        <xs:element minOccurs="0" name="naziv" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="kraj" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="leto" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="poosodobiAvtoSalonResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="posodobiUporabniskiRacun">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+        <xs:element minOccurs="0" name="Ime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="geslo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="posodobiUporabniskiRacunResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="poosodobiAvtoVSalonu">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+        <xs:element minOccurs="0" name="idavta" type="xs:int" />
+        <xs:element minOccurs="0" name="idavtosalona" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="poosodobiAvtoVSalonuResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IzbrisiAvto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="avtoid" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IzbrisiAvtoResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IzbrisiAvtoSalon">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="avtoSalonid" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IzbrisiAvtoSalonResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DodajAvtoVavtoSalon">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="avto" type="xs:int" />
+        <xs:element minOccurs="0" name="avtosalon" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DodajAvtoVavtoSalonResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DodajAvtosalonAvtu">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="avtoid" type="xs:int" />
+        <xs:element minOccurs="0" name="savtolonid" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DodajAvtosalonAvtuResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OdstraniAvtoVavtosalonu">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OdstraniAvtoVavtosalonuResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DodajUporabnika">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Ime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="geslo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="admin" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DodajUporabnikaResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OdstraniUporabnika">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OdstraniUporabnikaResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VrniVseUporabnike">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VrniVseUporabnikeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="VrniVseUporabnikeResult" nillable="true" type="q7:ArrayOfUporabniskiRacun" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IzbrisiVseAvte">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IzbrisiVseAvteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OdstraniAvtomobilIzsalona">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="avtoid" type="xs:int" />
+        <xs:element minOccurs="0" name="avtosalonid" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OdstraniAvtomobilIzsalonaResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Odstranilastnistvoavtosalonanadavtom">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="avtoid" type="xs:int" />
+        <xs:element minOccurs="0" name="avtosalonid" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OdstranilastnistvoavtosalonanadavtomResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VrniSaloneAvtov">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VrniSaloneAvtovResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

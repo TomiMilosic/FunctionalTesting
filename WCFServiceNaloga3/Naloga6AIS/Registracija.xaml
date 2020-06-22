@@ -1,0 +1,20 @@
+﻿<Window x:Class="Naloga6AIS.Registracija"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Naloga6AIS"
+        mc:Ignorable="d"
+        Title="Registracija" Height="464.643" Width="338.757">
+    <Grid Background="AntiqueWhite">
+        <Label Content="Uporabnisko Ime:" HorizontalAlignment="Left" Margin="73,53,0,0" VerticalAlignment="Top" Height="35"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="73,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166" Name="RegistracijaPolje"/>
+        <Label Content="Geslo:" HorizontalAlignment="Left" Margin="73,139,0,0" VerticalAlignment="Top" Height="32"/>
+        <PasswordBox HorizontalAlignment="Left" Height="23" Margin="73,176,0,0"  VerticalAlignment="Top" Width="166" Name="RegGeslo1Polje"/>
+        <Label Content="Ponovi geslo:" HorizontalAlignment="Left" Margin="73,221,0,0" VerticalAlignment="Top" Width="96" Height="32"/>
+        <PasswordBox HorizontalAlignment="Left" Height="27" Margin="73,258,0,0" VerticalAlignment="Top" Width="166" Name="RegGeslo2Polje"/>
+        <RadioButton Content="Admin" HorizontalAlignment="Left" Margin="73,303,0,0" VerticalAlignment="Top" Height="19" Width="166" Name="adminradio"/>
+        <Button Content="Registracija" HorizontalAlignment="Left" Margin="73,327,0,0" VerticalAlignment="Top" Width="166" Height="35" Click="Button_Click"/>
+
+    </Grid>
+</Window>

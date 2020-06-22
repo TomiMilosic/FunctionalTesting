@@ -1,0 +1,17 @@
+C:\Users\Tomi\source\repos\WCFServiceNaloga3\Client\bin\Debug\Client.exe.config
+C:\Users\Tomi\source\repos\WCFServiceNaloga3\Client\bin\Debug\Client.exe
+C:\Users\Tomi\source\repos\WCFServiceNaloga3\Client\bin\Debug\Client.pdb
+C:\Users\Tomi\source\repos\WCFServiceNaloga3\Client\obj\Debug\Client.csprojAssemblyReference.cache
+C:\Users\Tomi\source\repos\WCFServiceNaloga3\Client\obj\Debug\Client.exe
+C:\Users\Tomi\source\repos\WCFServiceNaloga3\Client\obj\Debug\Client.pdb
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\Client\bin\Debug\Client.exe.config
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\Client\bin\Debug\Client.exe
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\Client\bin\Debug\Client.pdb
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\Client\obj\Debug\Client.exe
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\Client\obj\Debug\Client.pdb
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\Client\bin\Debug\EntityFramework.dll
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\Client\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\Client\bin\Debug\EntityFramework.xml
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\Client\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\Client\obj\Debug\Client.csproj.CopyComplete
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\Client\obj\Debug\Client.csprojAssemblyReference.cache

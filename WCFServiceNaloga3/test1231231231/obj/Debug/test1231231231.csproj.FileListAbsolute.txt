@@ -1,0 +1,6 @@
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\test1231231231\bin\Debug\test1231231231.exe.config
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\test1231231231\bin\Debug\test1231231231.exe
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\test1231231231\bin\Debug\test1231231231.pdb
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\test1231231231\obj\Debug\test1231231231.csprojAssemblyReference.cache
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\test1231231231\obj\Debug\test1231231231.exe
+C:\Users\Tomi\Downloads\Naloga4baza\WCFServiceNaloga3\test1231231231\obj\Debug\test1231231231.pdb

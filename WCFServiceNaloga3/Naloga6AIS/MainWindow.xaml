@@ -1,0 +1,28 @@
+﻿<Window x:Class="Naloga6AIS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Naloga6AIS"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="AntiqueWhite">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button x:Name="PrijavaBTN" Content="Potrdi" Grid.Column="1" HorizontalAlignment="Left" Margin="167.164,150.218,0,0" Grid.Row="1" VerticalAlignment="Top" Width="146" Click="PrijavaBTN_Click" Height="24"/>
+        <PasswordBox x:Name="VnosGesloPolje" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="167.164,112.218,0,0" Grid.Row="1"  VerticalAlignment="Top" Width="146"/>
+        <Label Content="Geslo:" Grid.Column="1" HorizontalAlignment="Left" Margin="221.164,75.218,0,0" Grid.Row="1" VerticalAlignment="Top" Height="32"/>
+        <Label Content="Uporabnisko Ime:" Grid.Column="1" HorizontalAlignment="Left" Margin="190.164,10.218,0,0" Grid.Row="1" VerticalAlignment="Top" Width="109" Height="29"/>
+        <TextBox x:Name="VnosImenaPolje" Grid.Column="1" HorizontalAlignment="Left" Height="26" Margin="167.164,44.218,0,0" Grid.Row="1"   VerticalAlignment="Top" Width="146" />
+        <Button x:Name="RegistracijaBTN" Content="Registracija" Grid.Column="1" HorizontalAlignment="Left" Margin="167.164,179.218,0,0" Grid.Row="1" VerticalAlignment="Top" Width="146" Height="25" Click="RegistracijaBTN_Click"/>
+
+    </Grid>
+</Window>

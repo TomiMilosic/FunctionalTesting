@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:49837/Service.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:49837/Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:49837/Service.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService_IzpisAdmin_InputMessage">
+    <wsdl:part name="parameters" element="tns:IzpisAdmin" />
+  </wsdl:message>
+  <wsdl:message name="IService_IzpisAdmin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IzpisAdminResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_najstarejsiAvtosalon_InputMessage">
+    <wsdl:part name="parameters" element="tns:najstarejsiAvtosalon" />
+  </wsdl:message>
+  <wsdl:message name="IService_najstarejsiAvtosalon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:najstarejsiAvtosalonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_najvecAvtomobilov_InputMessage">
+    <wsdl:part name="parameters" element="tns:najvecAvtomobilov" />
+  </wsdl:message>
+  <wsdl:message name="IService_najvecAvtomobilov_OutputMessage">
+    <wsdl:part name="parameters" element="tns:najvecAvtomobilovResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_PovprecnavrednostAvtov_InputMessage">
+    <wsdl:part name="parameters" element="tns:PovprecnavrednostAvtov" />
+  </wsdl:message>
+  <wsdl:message name="IService_PovprecnavrednostAvtov_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PovprecnavrednostAvtovResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_Uporabnik_InputMessage">
+    <wsdl:part name="parameters" element="tns:Uporabnik" />
+  </wsdl:message>
+  <wsdl:message name="IService_Uporabnik_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UporabnikResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_VrniAvte_InputMessage">
+    <wsdl:part name="parameters" element="tns:VrniAvte" />
+  </wsdl:message>
+  <wsdl:message name="IService_VrniAvte_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VrniAvteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_VrniAvtoSalone_InputMessage">
+    <wsdl:part name="parameters" element="tns:VrniAvtoSalone" />
+  </wsdl:message>
+  <wsdl:message name="IService_VrniAvtoSalone_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VrniAvtoSaloneResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_VrniAvteVSalonu_InputMessage">
+    <wsdl:part name="parameters" element="tns:VrniAvteVSalonu" />
+  </wsdl:message>
+  <wsdl:message name="IService_VrniAvteVSalonu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VrniAvteVSalonuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_DodajAvto_InputMessage">
+    <wsdl:part name="parameters" element="tns:DodajAvto" />
+  </wsdl:message>
+  <wsdl:message name="IService_DodajAvto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DodajAvtoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_DodajAvtoSalon_InputMessage">
+    <wsdl:part name="parameters" element="tns:DodajAvtoSalon" />
+  </wsdl:message>
+  <wsdl:message name="IService_DodajAvtoSalon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DodajAvtoSalonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_DodajAvtoVSalon_InputMessage">
+    <wsdl:part name="parameters" element="tns:DodajAvtoVSalon" />
+  </wsdl:message>
+  <wsdl:message name="IService_DodajAvtoVSalon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DodajAvtoVSalonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_poosodobiAvto_InputMessage">
+    <wsdl:part name="parameters" element="tns:poosodobiAvto" />
+  </wsdl:message>
+  <wsdl:message name="IService_poosodobiAvto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:poosodobiAvtoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_poosodobiAvtoSalon_InputMessage">
+    <wsdl:part name="parameters" element="tns:poosodobiAvtoSalon" />
+  </wsdl:message>
+  <wsdl:message name="IService_poosodobiAvtoSalon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:poosodobiAvtoSalonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_posodobiUporabniskiRacun_InputMessage">
+    <wsdl:part name="parameters" element="tns:posodobiUporabniskiRacun" />
+  </wsdl:message>
+  <wsdl:message name="IService_posodobiUporabniskiRacun_OutputMessage">
+    <wsdl:part name="parameters" element="tns:posodobiUporabniskiRacunResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_poosodobiAvtoVSalonu_InputMessage">
+    <wsdl:part name="parameters" element="tns:poosodobiAvtoVSalonu" />
+  </wsdl:message>
+  <wsdl:message name="IService_poosodobiAvtoVSalonu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:poosodobiAvtoVSalonuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_IzbrisiAvto_InputMessage">
+    <wsdl:part name="parameters" element="tns:IzbrisiAvto" />
+  </wsdl:message>
+  <wsdl:message name="IService_IzbrisiAvto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IzbrisiAvtoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_IzbrisiAvtoSalon_InputMessage">
+    <wsdl:part name="parameters" element="tns:IzbrisiAvtoSalon" />
+  </wsdl:message>
+  <wsdl:message name="IService_IzbrisiAvtoSalon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IzbrisiAvtoSalonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_DodajAvtoVavtoSalon_InputMessage">
+    <wsdl:part name="parameters" element="tns:DodajAvtoVavtoSalon" />
+  </wsdl:message>
+  <wsdl:message name="IService_DodajAvtoVavtoSalon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DodajAvtoVavtoSalonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_DodajAvtosalonAvtu_InputMessage">
+    <wsdl:part name="parameters" element="tns:DodajAvtosalonAvtu" />
+  </wsdl:message>
+  <wsdl:message name="IService_DodajAvtosalonAvtu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DodajAvtosalonAvtuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_OdstraniAvtoVavtosalonu_InputMessage">
+    <wsdl:part name="parameters" element="tns:OdstraniAvtoVavtosalonu" />
+  </wsdl:message>
+  <wsdl:message name="IService_OdstraniAvtoVavtosalonu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OdstraniAvtoVavtosalonuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_DodajUporabnika_InputMessage">
+    <wsdl:part name="parameters" element="tns:DodajUporabnika" />
+  </wsdl:message>
+  <wsdl:message name="IService_DodajUporabnika_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DodajUporabnikaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_OdstraniUporabnika_InputMessage">
+    <wsdl:part name="parameters" element="tns:OdstraniUporabnika" />
+  </wsdl:message>
+  <wsdl:message name="IService_OdstraniUporabnika_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OdstraniUporabnikaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_VrniVseUporabnike_InputMessage">
+    <wsdl:part name="parameters" element="tns:VrniVseUporabnike" />
+  </wsdl:message>
+  <wsdl:message name="IService_VrniVseUporabnike_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VrniVseUporabnikeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_IzbrisiVseAvte_InputMessage">
+    <wsdl:part name="parameters" element="tns:IzbrisiVseAvte" />
+  </wsdl:message>
+  <wsdl:message name="IService_IzbrisiVseAvte_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IzbrisiVseAvteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_OdstraniAvtomobilIzsalona_InputMessage">
+    <wsdl:part name="parameters" element="tns:OdstraniAvtomobilIzsalona" />
+  </wsdl:message>
+  <wsdl:message name="IService_OdstraniAvtomobilIzsalona_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OdstraniAvtomobilIzsalonaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_Odstranilastnistvoavtosalonanadavtom_InputMessage">
+    <wsdl:part name="parameters" element="tns:Odstranilastnistvoavtosalonanadavtom" />
+  </wsdl:message>
+  <wsdl:message name="IService_Odstranilastnistvoavtosalonanadavtom_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OdstranilastnistvoavtosalonanadavtomResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_VrniSaloneAvtov_InputMessage">
+    <wsdl:part name="parameters" element="tns:VrniSaloneAvtov" />
+  </wsdl:message>
+  <wsdl:message name="IService_VrniSaloneAvtov_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VrniSaloneAvtovResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService">
+    <wsdl:operation name="IzpisAdmin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/IzpisAdmin" message="tns:IService_IzpisAdmin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/IzpisAdminResponse" message="tns:IService_IzpisAdmin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="najstarejsiAvtosalon">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/najstarejsiAvtosalon" message="tns:IService_najstarejsiAvtosalon_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/najstarejsiAvtosalonResponse" message="tns:IService_najstarejsiAvtosalon_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="najvecAvtomobilov">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/najvecAvtomobilov" message="tns:IService_najvecAvtomobilov_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/najvecAvtomobilovResponse" message="tns:IService_najvecAvtomobilov_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PovprecnavrednostAvtov">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/PovprecnavrednostAvtov" message="tns:IService_PovprecnavrednostAvtov_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/PovprecnavrednostAvtovResponse" message="tns:IService_PovprecnavrednostAvtov_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Uporabnik">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/Uporabnik" message="tns:IService_Uporabnik_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/UporabnikResponse" message="tns:IService_Uporabnik_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VrniAvte">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/VrniAvte" message="tns:IService_VrniAvte_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/VrniAvteResponse" message="tns:IService_VrniAvte_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VrniAvtoSalone">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/VrniAvtoSalone" message="tns:IService_VrniAvtoSalone_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/VrniAvtoSaloneResponse" message="tns:IService_VrniAvtoSalone_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VrniAvteVSalonu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/VrniAvteVSalonu" message="tns:IService_VrniAvteVSalonu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/VrniAvteVSalonuResponse" message="tns:IService_VrniAvteVSalonu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DodajAvto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/DodajAvto" message="tns:IService_DodajAvto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/DodajAvtoResponse" message="tns:IService_DodajAvto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DodajAvtoSalon">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/DodajAvtoSalon" message="tns:IService_DodajAvtoSalon_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/DodajAvtoSalonResponse" message="tns:IService_DodajAvtoSalon_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DodajAvtoVSalon">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/DodajAvtoVSalon" message="tns:IService_DodajAvtoVSalon_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/DodajAvtoVSalonResponse" message="tns:IService_DodajAvtoVSalon_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="poosodobiAvto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/poosodobiAvto" message="tns:IService_poosodobiAvto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/poosodobiAvtoResponse" message="tns:IService_poosodobiAvto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="poosodobiAvtoSalon">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/poosodobiAvtoSalon" message="tns:IService_poosodobiAvtoSalon_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/poosodobiAvtoSalonResponse" message="tns:IService_poosodobiAvtoSalon_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="posodobiUporabniskiRacun">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/posodobiUporabniskiRacun" message="tns:IService_posodobiUporabniskiRacun_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/posodobiUporabniskiRacunResponse" message="tns:IService_posodobiUporabniskiRacun_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="poosodobiAvtoVSalonu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/poosodobiAvtoVSalonu" message="tns:IService_poosodobiAvtoVSalonu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/poosodobiAvtoVSalonuResponse" message="tns:IService_poosodobiAvtoVSalonu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IzbrisiAvto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/IzbrisiAvto" message="tns:IService_IzbrisiAvto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/IzbrisiAvtoResponse" message="tns:IService_IzbrisiAvto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IzbrisiAvtoSalon">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/IzbrisiAvtoSalon" message="tns:IService_IzbrisiAvtoSalon_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/IzbrisiAvtoSalonResponse" message="tns:IService_IzbrisiAvtoSalon_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DodajAvtoVavtoSalon">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/DodajAvtoVavtoSalon" message="tns:IService_DodajAvtoVavtoSalon_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/DodajAvtoVavtoSalonResponse" message="tns:IService_DodajAvtoVavtoSalon_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DodajAvtosalonAvtu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/DodajAvtosalonAvtu" message="tns:IService_DodajAvtosalonAvtu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/DodajAvtosalonAvtuResponse" message="tns:IService_DodajAvtosalonAvtu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OdstraniAvtoVavtosalonu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/OdstraniAvtoVavtosalonu" message="tns:IService_OdstraniAvtoVavtosalonu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/OdstraniAvtoVavtosalonuResponse" message="tns:IService_OdstraniAvtoVavtosalonu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DodajUporabnika">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/DodajUporabnika" message="tns:IService_DodajUporabnika_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/DodajUporabnikaResponse" message="tns:IService_DodajUporabnika_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OdstraniUporabnika">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/OdstraniUporabnika" message="tns:IService_OdstraniUporabnika_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/OdstraniUporabnikaResponse" message="tns:IService_OdstraniUporabnika_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VrniVseUporabnike">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/VrniVseUporabnike" message="tns:IService_VrniVseUporabnike_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/VrniVseUporabnikeResponse" message="tns:IService_VrniVseUporabnike_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IzbrisiVseAvte">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/IzbrisiVseAvte" message="tns:IService_IzbrisiVseAvte_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/IzbrisiVseAvteResponse" message="tns:IService_IzbrisiVseAvte_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OdstraniAvtomobilIzsalona">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/OdstraniAvtomobilIzsalona" message="tns:IService_OdstraniAvtomobilIzsalona_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/OdstraniAvtomobilIzsalonaResponse" message="tns:IService_OdstraniAvtomobilIzsalona_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Odstranilastnistvoavtosalonanadavtom">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/Odstranilastnistvoavtosalonanadavtom" message="tns:IService_Odstranilastnistvoavtosalonanadavtom_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/OdstranilastnistvoavtosalonanadavtomResponse" message="tns:IService_Odstranilastnistvoavtosalonanadavtom_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VrniSaloneAvtov">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/VrniSaloneAvtov" message="tns:IService_VrniSaloneAvtov_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/VrniSaloneAvtovResponse" message="tns:IService_VrniSaloneAvtov_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService" type="tns:IService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="IzpisAdmin">
+      <soap:operation soapAction="http://tempuri.org/IService/IzpisAdmin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="najstarejsiAvtosalon">
+      <soap:operation soapAction="http://tempuri.org/IService/najstarejsiAvtosalon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="najvecAvtomobilov">
+      <soap:operation soapAction="http://tempuri.org/IService/najvecAvtomobilov" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PovprecnavrednostAvtov">
+      <soap:operation soapAction="http://tempuri.org/IService/PovprecnavrednostAvtov" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Uporabnik">
+      <soap:operation soapAction="http://tempuri.org/IService/Uporabnik" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VrniAvte">
+      <soap:operation soapAction="http://tempuri.org/IService/VrniAvte" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VrniAvtoSalone">
+      <soap:operation soapAction="http://tempuri.org/IService/VrniAvtoSalone" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VrniAvteVSalonu">
+      <soap:operation soapAction="http://tempuri.org/IService/VrniAvteVSalonu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DodajAvto">
+      <soap:operation soapAction="http://tempuri.org/IService/DodajAvto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DodajAvtoSalon">
+      <soap:operation soapAction="http://tempuri.org/IService/DodajAvtoSalon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DodajAvtoVSalon">
+      <soap:operation soapAction="http://tempuri.org/IService/DodajAvtoVSalon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="poosodobiAvto">
+      <soap:operation soapAction="http://tempuri.org/IService/poosodobiAvto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="poosodobiAvtoSalon">
+      <soap:operation soapAction="http://tempuri.org/IService/poosodobiAvtoSalon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="posodobiUporabniskiRacun">
+      <soap:operation soapAction="http://tempuri.org/IService/posodobiUporabniskiRacun" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="poosodobiAvtoVSalonu">
+      <soap:operation soapAction="http://tempuri.org/IService/poosodobiAvtoVSalonu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IzbrisiAvto">
+      <soap:operation soapAction="http://tempuri.org/IService/IzbrisiAvto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IzbrisiAvtoSalon">
+      <soap:operation soapAction="http://tempuri.org/IService/IzbrisiAvtoSalon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DodajAvtoVavtoSalon">
+      <soap:operation soapAction="http://tempuri.org/IService/DodajAvtoVavtoSalon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DodajAvtosalonAvtu">
+      <soap:operation soapAction="http://tempuri.org/IService/DodajAvtosalonAvtu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OdstraniAvtoVavtosalonu">
+      <soap:operation soapAction="http://tempuri.org/IService/OdstraniAvtoVavtosalonu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DodajUporabnika">
+      <soap:operation soapAction="http://tempuri.org/IService/DodajUporabnika" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OdstraniUporabnika">
+      <soap:operation soapAction="http://tempuri.org/IService/OdstraniUporabnika" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VrniVseUporabnike">
+      <soap:operation soapAction="http://tempuri.org/IService/VrniVseUporabnike" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IzbrisiVseAvte">
+      <soap:operation soapAction="http://tempuri.org/IService/IzbrisiVseAvte" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OdstraniAvtomobilIzsalona">
+      <soap:operation soapAction="http://tempuri.org/IService/OdstraniAvtomobilIzsalona" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Odstranilastnistvoavtosalonanadavtom">
+      <soap:operation soapAction="http://tempuri.org/IService/Odstranilastnistvoavtosalonanadavtom" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VrniSaloneAvtov">
+      <soap:operation soapAction="http://tempuri.org/IService/VrniSaloneAvtov" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="BasicHttpBinding_IService" binding="tns:BasicHttpBinding_IService">
+      <soap:address location="http://localhost:49837/Service.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
